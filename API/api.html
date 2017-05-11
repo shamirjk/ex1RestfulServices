@@ -22,17 +22,17 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1>VOD Library Web-service API</h1>
-            <p>The web-service allows you to get movies data from JSON File</p>
-            <h2>Instructions</h2>
-            <h4>Get all Movies</h4>
-            Method: GET<br>
-            URL Example: <code><a href="http://localhost:3000/getAllMovies">/getAllMovies</a></code><br>
-            Response: All The Movies in the Library<br>
-            <pre>[
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>VOD Library Web-service API</h1>
+                <p>The web-service allows you to get movies data from JSON File</p>
+                <h2>Instructions</h2>
+                <h3>Get all Movies</h3>
+                Method: GET<br>
+                URL Example: <code><a href="./getAllMovies">/getAllMovies</a></code><br>
+                Response: All The Movies in the Library<br>
+                <pre>[
     {
         name: "Ameican History X",
         year: "1998",
@@ -49,11 +49,11 @@
 ...
 ]           </pre><br>
 
-            <h4>Get Holiday Movies</h4>
-            Method: GET<br>
-            URL Example: <code><a href="http://localhost:3000/getHolidayMovies">/getHolidayMovies</a></code><br>
-            Response: All The Movies That Related to Holidays
-            <pre>
+                <h3>Get Holiday Movies</h3>
+                Method: GET<br>
+                URL Example: <code><a href="./getHolidayMovies">/getHolidayMovies</a></code><br>
+                Response: All The Movies That Related to Holidays
+                <pre>
 {
     movies: [
         {
@@ -74,23 +74,23 @@
     ]
 }</pre><br>
 
-            <h4>Get all Movies that are reletad to the specific Holiday</h4>
-            Method: POST<br>
-            Param: holiday_name<br>
-            Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
-            URL Example: <code><a href="http://localhost:3000/getMoviesByHoliday/">/getMoviesByHoliday/Christmas</a></code><br>
-            Response: Movies That are Belonged to the Holiday<br><br>
+                <h3>Get all Movies that are reletad to the specific Holiday</h3>
+                Method: POST<br>
+                Required Parameters: holiday_name<br>
+                Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
+                URL Example: <code><a href="#">/getMoviesByHoliday/Christmas</a></code><br>
+                Response: Movies That are Belonged to the Holiday<br><br>
 
 
-            <h4>Get all Movies that are reletad to the specific Holiday and Language</h4>
-            Method: GET<br>
-            Param: holiday_name, language<br>
-            Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
-            Example Possible Languges: English, Hebrew<br>
-            URL Example: <code><a href="http://localhost:3000/getMoviesByHolidayAndLanguage/Passover/English/">
-            /getMoviesByHolidayAndLanguage/Passover/English/</a></code><br>
-            Response: Movies That are Belonged to the Holiday and in asked language<br><br>
-            <pre>
+                <h3>Get all Movies that are reletad to the specific Holiday and Language</h3>
+                Method: GET<br>
+                Required Parameters: holiday_name, language<br>
+                Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
+                Example Possible Languges: English, Hebrew<br>
+                URL Example: <code><a href="./getMoviesByHolidayAndLanguage/Passover/English">
+                /getMoviesByHolidayAndLanguage/Passover/English</a></code><br>
+                Response: Movies That are Belonged to the Holiday and in asked original language<br><br>
+                <pre>
 {
     movies: [
         {
@@ -110,12 +110,11 @@
     .....
     ]
 }
+            </div>
         </div>
     </div>
-</div>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-</body>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
