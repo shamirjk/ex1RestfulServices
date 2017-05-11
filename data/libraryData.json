@@ -1,163 +1,178 @@
 {
-    "movies":[
-      {
-        "name": "Ameican History X",
-        "year":"1998",
-        "genre": "Drama",
-        "starring": ["Edward Norton", "Edward Furlong", "Fairuza Balk"],
-        "running time": "119 min",
-        "country": "United States",
-        "language": "English",
-        "tags": "Racism"
+  "movies":[
+    {
+      "name": "American History X",
+      "year":"1998",
+      "genre": "Drama",
+      "starring": ["Edward Norton", "Edward Furlong", "Fairuza Balk"],
+      "running time": "119 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew", "French"]
       },
+      "tags": "Racism"
+    },
 
-      {
-        "name": "Passover Fever",
-        "year":"1995",
-        "genre": "Drama",
-        "starring": ["Gila Almagor", "Yossef Shiloach"],
-        "running time": "100 min",
-        "country": "Israel",
-        "language": "Hebrew",
-        "holiday": 1,
-        "tags": ["Holiday", "Passover"]
+    {
+      "name": "Passover Fever",
+      "year":"1995",
+      "genre": "Drama",
+      "starring": ["Gila Almagor", "Yossef Shiloach"],
+      "running time": "100 min",
+      "country": "Israel",
+      "language": {
+        "original":"Hebrew",
+        "subtitles":["English","Hebrew"]
       },
+      "holiday": "Passover",
+      "tags": ["Holiday", "Passover", "Family"]
+    },
 
-      {
-        "name": "Home Alone",
-        "year":"1990",
-        "genre": "Comedy",
-        "starring": ["Macaulay Culkin", "Joe Pesci"],
-        "running time": "102 min",
-        "country": "United States",
-        "language": "English",
-        "holiday": 2,
-        "tags": ["Holiday", "Christmas"]
+    {
+      "name": "Home Alone",
+      "year":"1990",
+      "genre": "Comedy",
+      "starring": ["Macaulay Culkin", "Joe Pesci"],
+      "running time": "102 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew"]
       },
+      "holiday": "Christmas",
+      "tags": ["Holiday", "Christmas", "kids"]
+    },
 
-      {
-        "name": "Die Hard",
-        "year":"1988",
-        "genre": "Action",
-        "starring": ["Bruce Willis", "Alan Rickman"],
-        "running time": "132 min",
-        "country": "United States",
-        "language": "English",
-        "holiday": 2,
-        "tags": ["Holiday", "Christmas"]
+    {
+      "name": "Die Hard",
+      "year":"1988",
+      "genre": "Action",
+      "starring": ["Bruce Willis", "Alan Rickman"],
+      "running time": "132 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew", "Russian"]
       },
+      "language": "English",
+      "holiday": "Christmas",
+      "tags": ["Holiday", "Christmas", "Police", "Action"]
+    },
 
-      {
-        "name": "Story Of Ruth",
-        "year":"1960",
-        "genre": ["History", "Drama"],
-        "starring": ["Elana Eden", "Stuart Whitman"],
-        "running time": "132 min",
-        "country": "United States",
-        "language": "English",
-        "holiday": 3,
-        "tags": ["Holiday", "Shavuot"]
+    {
+      "name": "Story Of Ruth",
+      "year":"1960",
+      "genre": ["History", "Drama"],
+      "starring": ["Elana Eden", "Stuart Whitman"],
+      "running time": "132 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew"]
       },
+      "holiday": "Shavouot",
+      "tags": ["Holiday", "Shavuot", "Ruth", "Bible"]
+    },
 
-      {
-        "name": "Exodus: Gods and Kings",
-        "year":"2014",
-        "genre": ["History", "Adventure"],
-        "starring": ["Christian Bale", "Joel Edgerton", "John Turturro"],
-        "running time": "150 min",
-        "country": "United States",
-        "language": "English",
-        "holiday": 1,
-        "tags": ["Holiday", "Passover"]
+    {
+      "name": "Exodus: Gods and Kings",
+      "year":"2014",
+      "genre": ["History", "Adventure"],
+      "starring": ["Christian Bale", "Joel Edgerton", "John Turturro"],
+      "running time": "150 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew", "Spanish", "Russian"]
       },
+      "holiday": "Passover",
+      "tags": ["Holiday", "Passover", "Moses", "Bible"]
+    },
 
-      {
-        "name": "Kippur",
-        "year":"2000",
-        "genre": "Drama",
-        "starring": ["Liron Levo", "Tomer Russo", "Uri Klauzner"],
-        "running time": "110 min",
-        "country": "Israel",
-        "language": "Hebrew",
-        "holiday": 4,
-        "tags": ["Holiday", "Yom Kippur"]
+    {
+      "name": "Kippur",
+      "year":"2000",
+      "genre": "Drama",
+      "starring": ["Liron Levo", "Tomer Russo", "Uri Klauzner"],
+      "running time": "110 min",
+      "country": "Israel",
+      "language": {
+        "original":"Hebrew",
+        "subtitles":["English","Hebrew", "Arabic"]
       },
+      "holiday": "Yom Kippur",
+      "tags": ["Holiday", "Yom Kippur", "War", "IDF"]
+    },
 
-      {
-        "name": "The Lion King",
-        "year":"1994",
-        "genre": "Animation",
-        "starring": ["Matthew Broderick", "James Earl Jones", "Jeremy Irons"],
-        "running time": "88 min",
-        "country": "United States",
-        "language": "English",
-        "tags": ["Walt Disney", "Animation", "Kids"]
+    {
+      "name": "The Lion King",
+      "year":"1994",
+      "genre": "Animation",
+      "starring": ["Matthew Broderick", "James Earl Jones", "Jeremy Irons"],
+      "running time": "88 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew"]
       },
+      "tags": ["Walt Disney", "Animation", "Kids"]
+    },
 
-      {
-        "name": "White Men Can't Jump",
-        "year":"1992",
-        "genre": "Comedy",
-        "starring": ["Woody Harrelson", "Wesley Snipes"],
-        "running time": "115 min",
-        "country": "United States",
-        "language": "English",
-        "tags": ["BasketBall", "Sport"]
+    {
+      "name": "White Men Can't Jump",
+      "year":"1992",
+      "genre": "Comedy",
+      "starring": ["Woody Harrelson", "Wesley Snipes"],
+      "running time": "115 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew", "Spanish"]
       },
+      "tags": ["BasketBall", "Sport"]
+    },
 
-      {
-        "name": "Up",
-        "year":"2009",
-        "genre": "Animation",
-        "starring": ["Pete Docter", "Ed Asner", "Bob Peterson"],
-        "running time": "96 min",
-        "country": "United States",
-        "language": "English",
-        "tags": ["Walt Disney", "Animation"]
+    {
+      "name": "Up",
+      "year":"2009",
+      "genre": "Animation",
+      "starring": ["Pete Docter", "Ed Asner", "Bob Peterson"],
+      "running time": "96 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew", "Russian"]
       },
+      "tags": ["Walt Disney", "Animation"]
+    },
 
-      {
-        "name": "Django Unchained",
-        "year":"2013",
-        "genre": "Drama",
-        "starring": ["Jamie Foxx", "Christoph Waltz", "Leonardo DiCaprio"],
-        "running time": "165 min",
-        "country": "United States",
-        "language": "English",
-        "tags": ["Tarantino", "Mississippi"]
+    {
+      "name": "Django Unchained",
+      "year":"2013",
+      "genre": "Drama",
+      "starring": ["Jamie Foxx", "Christoph Waltz", "Leonardo DiCaprio"],
+      "running time": "165 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew", "German"]
       },
+      "tags": ["Tarantino", "Mississippi"]
+    },
 
-      {
-        "name": "The Wolf of Wall Street",
-        "year":"2013",
-        "genre": ["Drama", "True Story"],
-        "starring": ["Leonardo DiCaprio", "Margot Robbie","Jonah Hill"],
-        "running time": "180 min",
-        "country": "United States",
-        "language": "English",
-        "tags": ["Scorsese", "True Story", "Wall Street"]
-      }
-    ],
-
-    "holiday":[
-      {
-        "name": "Passover",
-        "value":1
+    {
+      "name": "The Wolf of Wall Street",
+      "year":"2013",
+      "genre": ["Drama", "True Story"],
+      "starring": ["Leonardo DiCaprio", "Margot Robbie","Jonah Hill"],
+      "running time": "180 min",
+      "country": "United States",
+      "language": {
+        "original":"English",
+        "subtitles":["English","Hebrew", "Spanish"]
       },
-
-      {
-        "name": "Christmas",
-        "value":2
-      },
-
-      {
-        "name": "Shavuot",
-        "value":3
-      },
-
-      {
-        "name": "Yom Kippur",
-        "value":4
-      }
-   ]
+      "tags": ["Scorsese", "True Story", "Wall Street"]
+    }
+  ]
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Students API</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>VOD Library Web-service API</h1>
+            <p>The web-service allows you to get movies data from JSON File</p>
+            <h2>Instructions</h2>
+            <h4>Get all Movies</h4>
+            Method: GET<br>
+            URL Example: <code><a href="http://localhost:3000/getAllMovies">/getAllMovies</a></code><br>
+            Response: All The Movies in the Library<br>
+            <pre>[
+    {
+        name: "Ameican History X",
+        year: "1998",
+        genre: "Drama",
+        starring: [ "Edward Norton", "Edward Furlong", "Fairuza Balk"],
+        running time: "119 min",
+        country: "United States",
+        language:{
+            original: "English",
+            subtitles: ["English", "Hebrew", "French"]
+        },
+        tags: "Racism"
+    },
+...
+]           </pre><br>
+
+            <h4>Get Holiday Movies</h4>
+            Method: GET<br>
+            URL Example: <code><a href="http://localhost:3000/getHolidayMovies">/getHolidayMovies</a></code><br>
+            Response: All The Movies That Related to Holidays
+            <pre>
+{
+    movies: [
+        {
+            name: "Passover Fever",
+            year: "1995",
+            genre: "Drama",
+            starring: [ "Gila Almagor", "Yossef Shiloach"],
+            running time: "100 min",
+            country: "Israel",
+            language:{
+                original: "Hebrew",
+                subtitles: ["English", "Hebrew"]
+            },
+            holiday: "Passover",
+            tags: ["Holiday", "Passover", "Family"]
+        },
+        .....
+    ]
+}</pre><br>
+
+            <h4>Get all Movies that are reletad to the specific Holiday</h4>
+            Method: POST<br>
+            Param: holiday_name<br>
+            Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
+            URL Example: <code><a href="http://localhost:3000/getMoviesByHoliday/">/getMoviesByHoliday/Christmas</a></code><br>
+            Response: Movies That are Belonged to the Holiday<br><br>
+
+
+            <h4>Get all Movies that are reletad to the specific Holiday and Language</h4>
+            Method: GET<br>
+            Param: holiday_name, language<br>
+            Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
+            Example Possible Languges: English, Hebrew<br>
+            URL Example: <code><a href="http://localhost:3000/getMoviesByHolidayAndLanguage/Passover/English/">
+            /getMoviesByHolidayAndLanguage/Passover/English/</a></code><br>
+            Response: Movies That are Belonged to the Holiday and in asked language<br><br>
+            <pre>
+{
+    movies: [
+        {
+            name: "Kippur",
+            year: "2000",
+            genre: "Drama",
+            starring: [ "Liron Levo", "Tomer Russo", "Uri Klauzner"],
+            running time: "110 min",
+            country: "Israel",
+            language:{
+                original: "Hebrew",
+                subtitles: ["English", "Hebrew", "Arabic"]
+            },
+            holiday: "Yom Kippur",
+            tags: ["Holiday", "Yom Kippur", "War", "IDF"]
+        },
+    .....
+    ]
+}
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

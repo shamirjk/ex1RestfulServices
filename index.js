@@ -5,8 +5,8 @@ const   express= require ('express'),
         bodyParser = require('body-parser'),
         myList = require('./holidayMdl');//**************
 
-        app.use(bodyParser.json()); //parsing application/JSON
-        app.use(bodyParser.urlencoded({extended:true})); //parsing application
+app.use(bodyParser.json()); //parsing application/JSON
+app.use(bodyParser.urlencoded({extended:true})); //parsing application
 
 app.all('*', (req, res, next) => {
     console.log ("runs for all HTTP verbs first");
@@ -36,7 +36,7 @@ app.post('/getMoviesByHoliday/', (req, res)=>{
 
 app.listen (port, () => {//create Server
     console.log(`listening on port ${port}`);
-    });
+});
 
 /**
  * Created by Shamir on 07-May-17.
