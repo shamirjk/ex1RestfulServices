@@ -25,12 +25,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1>VOD Library Web-service API</h1>
+                <h1>VOD Library Web-Service API</h1>
                 <p>The web-service allows you to get movies data from JSON File</p>
                 <h2>Instructions</h2>
                 <h3>Get all Movies</h3>
                 Method: GET<br>
-                URL Example: <code><a href="./getAllMovies">/getAllMovies</a></code><br>
+                URL Example: <code><a href="./getAllMovies" target="_blank">
+                https://ex1-vodlibrary.herokuapp.com/getAllMovies</a></code><br>
                 Response: All The Movies in the Library<br>
                 <pre>[
     {
@@ -51,7 +52,8 @@
 
                 <h3>Get Holiday Movies</h3>
                 Method: GET<br>
-                URL Example: <code><a href="./getHolidayMovies">/getHolidayMovies</a></code><br>
+                URL Example: <code><a href="./getHolidayMovies" target="_blank">
+                https://ex1-vodlibrary.herokuapp.com/getHolidayMovies</a></code><br>
                 Response: All The Movies That Related to Holidays
                 <pre>
 {
@@ -74,12 +76,17 @@
     ]
 }</pre><br>
 
-                <h3>Get all Movies that are reletad to the specific Holiday</h3>
+                <h3>Receive all Movies that are reletad to the specific Holiday</h3>
                 Method: POST<br>
                 Required Parameters: holiday_name<br>
                 Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
-                URL Example: <code><a href="#">/getMoviesByHoliday/Christmas</a></code><br>
+                URL Example: <code><a href="#">/getMoviesByHoliday/</a></code><br>
+                Key: <code>holiday_name</code> Value (example): <code>Christmas</code><br>
                 Response: Movies That are Belonged to the Holiday<br><br>
+                <form method="POST" action="../getMoviesByHoliday/" target="_blank">
+                    <input type="text" name="holiday_name" value="Christmas" style="display: none">
+                    <input type="submit" value="Example">
+                </form>
 
 
                 <h3>Get all Movies that are reletad to the specific Holiday and Language</h3>
@@ -87,8 +94,8 @@
                 Required Parameters: holiday_name, language<br>
                 Example Possible Holidays: Passoveer, Christmas, Shavuot, Yom Kippur<br>
                 Example Possible Languges: English, Hebrew<br>
-                URL Example: <code><a href="./getMoviesByHolidayAndLanguage/Passover/English">
-                /getMoviesByHolidayAndLanguage/Passover/English</a></code><br>
+                URL Example: <code><a href="./getMoviesByHolidayAndLanguage/Passover/English" target="_blank">
+                https://ex1-vodlibrary.herokuapp.com/getMoviesByHolidayAndLanguage/Passover/English</a></code><br>
                 Response: Movies That are Belonged to the Holiday and in asked original language<br><br>
                 <pre>
 {
@@ -110,6 +117,7 @@
     .....
     ]
 }
+</pre><br>
             </div>
         </div>
     </div>

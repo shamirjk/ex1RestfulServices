@@ -20,10 +20,11 @@ exports.getHolidayMovies =() => {
 
 exports.getMoviesByHoliday = (holiday_name) => {
     var list = [];
-
-    for (let i=0; i<data.movies.length; i++){
-        if (data.movies[i].holiday === holiday_name){
-            list.push(data.movies[i]);
+    if (holiday_name != undefined) {
+        for (let i = 0; i < data.movies.length; i++) {
+            if (data.movies[i].holiday == holiday_name) {
+                list.push(data.movies[i]);
+            }
         }
     }
     if(list.length <1 ){
