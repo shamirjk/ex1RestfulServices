@@ -22,8 +22,8 @@ app.get (`/getAllMovies`, (req,res) => {
 
 app.get (`/getHolidayMovies`, (req,res) => {
     res.status(200).json(myList.getHolidayMovies());
-    console.log (`get: ${req.params}`);///////////////////////////////////////
-    //res.sendFile (__dirname + "API/api.html");//////////////////////////
+    console.log (`get: ${req.params}`);
+
 });
 
 app.get('/getMoviesByHolidayAndLanguage/:holiday_name/:language', (req, res)=>{
@@ -32,6 +32,11 @@ app.get('/getMoviesByHolidayAndLanguage/:holiday_name/:language', (req, res)=>{
 
 app.post('/getMoviesByHoliday/', (req, res)=>{
     res.status(200).json(myList.getMoviesByHoliday(req.body.holiday_name));
+});
+
+app.get (`/`, (req,res) => {
+    //res.status(200);
+    res.sendFile (__dirname + "/API/api.html");
 });
 
 app.listen (port, () => {//create Server
